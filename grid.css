@@ -1,0 +1,64 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:"a a a a a a a a a a a a"
+                        "b b b b b b b b b b b b"
+                        "c c c c c c c c c c c c"
+                        "d d d d e e e e f f f f "
+                        "g g g g h h h h i i i i"
+                        ". . . . j j j j . . . .";
+
+}
+
+nav{
+    grid-area: a;
+}
+.title{
+    grid-area: b;
+}
+.skills{
+    grid-area: c;
+}
+.javascript{
+    grid-area: d;
+}
+.html{
+    grid-area: e;
+}
+.css{
+    grid-area: f;
+}
+.bootstrap{
+    grid-area: g;
+}
+.express{
+    grid-area: h;
+}
+.mongo{
+    grid-area: i;
+}
+.react{
+    grid-area: j;
+}
+
+@media only screen and (max-width:540px){
+    body{
+        grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr 0.8fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "a a a a"
+        "b b b b"
+        "c c c c"
+        "d d d d"
+        "e e e e"
+        "f f f f"
+        "g g g g"
+        "h h h h"
+        "i i i i"
+        "j j j j";
+    }
+    .heading{
+        margin-bottom: 50px;
+    }
+}
