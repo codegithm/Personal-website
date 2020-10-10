@@ -22,7 +22,7 @@ header {
     top: 0;
 }
 
-.name h3, .contact a button{
+.name h5, .contact a button{
     margin-top: 15px;
 }
 
@@ -47,10 +47,10 @@ li, a{
     justify-content: center; 
 }
 
-.nav__links li:hover{
+.nav__links li:hover, .resp__nav__links li :hover{
     background: rgb(36, 146, 209);
 }
-.contact a button{
+.contact a button, .resp__contact a button{
     border-style: none;
     background: rgb(36, 146, 209);
     border-radius: 50px;
@@ -65,11 +65,11 @@ li, a{
     background: rgb(22, 118, 173);
 }
 
-.contact a button h5{
+.contact a button h5, .resp__contact a button h5{
     padding: 10px;
 }
 
-.nav__links li a{
+.nav__links li a, .resp__nav__links li a{
     margin-top: 15px;
 }
 
@@ -107,4 +107,45 @@ li, a{
     height: 60px;
     margin: 20px 20px 20px 20px;
     margin-left: 50px;
+}
+
+.resp__nav{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    box-shadow: 0px 4px 6px rgb(0,0,0, 0.7);
+    position: fixed;
+    top: 0;
+}
+
+.resp__name h5, .resp__contact a button{
+    margin-top: 15px;
+}
+
+.resp__name h5{
+    width: 110px;
+}
+
+.resp__name {
+    margin-left: 8px;
+}
+
+.resp__nav__links li {
+    width: 50px; 
+    height: 60px;
+    display: flex;
+    justify-content: center; 
+}
+
+.resp__nav__links {
+    width: 175px;
+    height: 60px;
+    display: flex;
+    
+}
+
+.resp__nav__links li a{
+    font-size: 10px;
 }

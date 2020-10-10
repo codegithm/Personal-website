@@ -42,12 +42,16 @@ nav{
     grid-area: j;
 }
 
-@media only screen and (max-width:540px){
+.resp__nav{
+    grid-area: ab;
+}
+
+@media only screen and (max-width:500px){
     body{
         grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
         grid-template-rows: 0.5fr 0.8fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-        "a a a a"
+        "ab ab ab ab"
         "b b b b"
         "c c c c"
         "d d d d"
@@ -58,7 +62,5 @@ nav{
         "i i i i"
         "j j j j";
     }
-    .heading{
-        margin-bottom: 50px;
-    }
+    
 }
