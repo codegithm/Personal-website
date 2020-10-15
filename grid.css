@@ -42,16 +42,30 @@ nav{
     grid-area: j;
 }
 
-.resp__nav{
-    grid-area: ab;
-}
 
-@media only screen and (max-width:500px){
+
+@media only screen and (max-width:540px){
+    .name h5{
+        width:90px;
+    }
+    .nav__links li {
+        width: 50px;
+        font-size: 10px;
+        margin-left: 7px;  
+    }
+    .nav{
+        justify-content: safe;
+    }
+    .nav__links {
+        width: 175px;
+    }
+    
     body{
+        display: grid;
         grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
         grid-template-rows: 0.5fr 0.8fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-        "ab ab ab ab"
+        "a a a a"
         "b b b b"
         "c c c c"
         "d d d d"
@@ -64,3 +78,6 @@ nav{
     }
     
 }
+
+
+

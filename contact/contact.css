@@ -1,0 +1,91 @@
+body{
+    color: white;
+}
+.contact{
+position: relative;
+}
+
+.create__message{
+    position: absolute;
+}
+
+.create__message .send{
+    color: white;
+    border-style: none;
+    border-radius: 40px;
+    background: rgb(36, 146, 209);
+    font-size: 20px;
+    padding: 5px;
+    outline: none;
+    margin-top: 10px;
+    box-shadow: 0px 4px 6px rgb(0,0,0, 0.3);
+}
+
+.create__message .send :active{
+    background:  rgb(13, 95, 143);
+}
+
+.create__message .username, .create__message .enter__message{
+    padding: 5px;
+    border-style: none;
+    border-radius: 10px;
+    margin: 5px;
+    outline: none;
+}
+h3 {
+    margin: 10px;
+}
+form{
+    margin-left: 10px;
+}
+
+main{
+    position: absolute;
+    top: 70px;
+    height: 100%;
+}
+
+.message{
+    margin-top: 70px;
+    margin-left: 10px;
+}
+
+.email{
+    margin-top: 150px;
+}
+
+#view{
+    margin: 20px;
+}
+#view h5{
+    margin-bottom: 5px;
+}
+#view button{
+    margin-bottom: 10px;
+    margin-top: 7px;
+    border-style: none;
+    border-radius: 40px;
+    color: white;
+    background: rgb(75, 6, 4);
+    padding: 6px;
+    box-shadow: 0px 4px 6px rgb(0,0,0, 0.3);
+}
+
+@media only screen and (max-width:540px){
+    .name h5{
+        width:90px;
+    }
+    .nav__links li {
+        width: 50px;
+        font-size: 10px;
+        margin-left: 7px;  
+    }
+    .nav{
+        justify-content: safe;
+    }
+    .nav__links {
+        width: 175px;
+    }
+   
+    
+}

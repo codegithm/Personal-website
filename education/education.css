@@ -1,0 +1,60 @@
+@media only screen and (max-width:540px){
+    .name h5{
+        width:90px;
+    }
+    .nav__links li {
+        width: 50px;
+        font-size: 10px;
+        margin-left: 7px;  
+    }
+    .nav{
+        justify-content: safe;
+    }
+    .nav__links {
+        width: 175px;
+    } 
+}
+
+.education__card{
+    height: 530px;
+    width: 250px;
+    background-color: rgb(41, 40, 40);
+    box-shadow: 0px 4px 6px rgb(0,0,0, 0.7);
+    margin: 50px;
+    color: white;
+}
+
+
+.education__card .education__head{
+    width: 250px;
+    height: 50px;
+    background: rgb(22, 118, 173);
+    box-shadow: 0px 4px 6px rgb(0,0,0, 0.4);
+    padding: 10px;
+}
+
+.education__card div ul{
+    margin-left: 6px;
+    margin-top: 6px;
+}
+
+.education__card{
+    margin-top: 100px;
+}
+
+.education__card div{
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+}
+
+.education__card button{
+    border-style: none;
+    border-radius: 40px;
+    margin: 10px;
+    color: white;
+    background: rgb(22, 118, 173);
+    padding: 6px;
+}
+
+
+
