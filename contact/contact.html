@@ -66,7 +66,7 @@
 
             let view = $("#view")
 
-            $.get('http://localhost:5000/create/messages',null,function(data){
+            $.get('https://guarded-spire-29226.herokuapp.com/create/messages',null,function(data){
                 data.map((list)=>{
                     console.log(list)
                     view.append(
@@ -84,7 +84,7 @@
                     message: $('.enter__message').val()
                 }
 
-                $.post('http://localhost:5000/create/createmessage',body,function(data){
+                $.post('https://guarded-spire-29226.herokuapp.com/create/createmessage',body,function(data){
 
                     alert('Message posted')
 
