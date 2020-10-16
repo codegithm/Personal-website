@@ -39,7 +39,7 @@ form{
     margin-left: 10px;
 }
 
-main{
+.main{
     position: absolute;
     top: 70px;
     height: 100%;
