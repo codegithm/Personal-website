@@ -46,7 +46,7 @@ form{
 }
 
 .message{
-    margin-top: 70px;
+    margin-top: 40px;
     margin-left: 10px;
 }
 
@@ -82,6 +82,7 @@ form{
     }
     .nav{
         justify-content: safe;
+        z-index: 2;
     }
     .nav__links {
         width: 175px;

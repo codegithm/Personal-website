@@ -26,6 +26,12 @@
     color: white;
 }
 
+.project{
+    height: 250px;
+    width: 100%;
+    background-image: url('./images\ \(3\).jpeg');
+}
+
 
 .projects__card .projects__head{
     width: 330px;

@@ -66,16 +66,40 @@
 
             let view = $("#view")
 
+
             $.get('https://guarded-spire-29226.herokuapp.com/create/messages',null,function(data){
                 data.map((list)=>{
                     
                     view.append(
                         '<h5>'+list.username+'</h5>'
                         + '<p>'+list.message+'</p>'
-                        +'<button>'+'Delete'+'</button>'
+                        +'<button class='+list._id+' >'+'Delete'+'</button>'
                     )
+
+                    $('.'+list._id).click(()=>{
+                        $.ajax({
+                            url: 'https://guarded-spire-29226.herokuapp.com/create/'+list._id,
+                            type: 'DELETE',
+                            success: function(result) {
+                                view.html(null)
+
+                                $.get('https://guarded-spire-29226.herokuapp.com/create/messages',null, function(res){
+                                    res.map((newData)=>{
+                                        view.append(
+                                        '<h5>'+newData.username+'</h5>'
+                                        + '<p>'+newData.message+'</p>'
+                                        +'<button class='+newData._id+' >'+'Delete'+'</button>'
+                    )
+                                    })
+                                })
+                            }
+});
+                    })
+                    
                 })
             })
+
+            
             
             $('.send').click(()=>{
 
@@ -90,6 +114,8 @@
 
                 })
             })
+
+            
         })
     </script>
 </body>
